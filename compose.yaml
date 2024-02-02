@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    container_name: flask-web
+    ports:
+      - 8000:5000
+  redis:
+    image: "redis:alpine"
+    container_name: redis
